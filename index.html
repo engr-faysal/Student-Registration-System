@@ -26,7 +26,37 @@
             </div>
         </div>
     </nav>
-
-    
+    <!-- Input Form -->
+    <div class="container mt-5">
+        <h1 class="text-center">Student Registration</h1>
+        <form id="StudentForm">
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" name="firstName" id="firstName" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" name="lastName" id="lastName" required>
+            </div>
+            <div class="mb-3">
+                <label for="roll" class="form-label">Roll</label>
+                <input type="number" min="1" class="form-control" name="roll" id="roll" required>
+            </div>
+            <div class="mb-3">
+                <label for="class" class="form-label">Class</label>
+                <input type="text" min="1" class="form-control" name="class" id="class" required>
+            </div>
+            <div class="mb-3">
+                <label for="mobileNo" class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" name="mobileNo" id="mobileNo" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
