@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Data</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Student Registration System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Register Student</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="allData.html">View All Students</a>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </nav>
+
+    <!-- Student Table -->
+    <div class="container mt-5">
+        <h1 class="text-center">All Registered Student</h1>
+        <table class="table table-bordered mt-3">
+            <thead class="text-center">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Roll</th>
+                    <th>Class</th>
+                    <th>Mobile Number</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="StudentTableBody">
+                <!-- Student Data will Appear Here -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
