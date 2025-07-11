@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student Data</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Student Registration System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Register Student</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="allData.html">View All Students</a>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </nav>
+    <!-- Input Form -->
+    <div class="container mt-5">
+        <h1 class="text-center">Student Registration</h1>
+        <form id="StudentForm">
+            <div class="mb-3">
+                <label for="IndexNumber" class="form-label">ID</label>
+                <input type="text" class="form-control" name="IndexNumber" id="IndexNumber" required>
+            </div>
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" name="firstName" id="firstName" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" name="lastName" id="lastName" required>
+            </div>
+            <div class="mb-3">
+                <label for="roll" class="form-label">Roll</label>
+                <input type="number" min="1" class="form-control" name="roll" id="roll" required>
+            </div>
+            <div class="mb-3">
+                <label for="class" class="form-label">Class</label>
+                <input type="text" min="1" class="form-control" name="class" id="class" required>
+            </div>
+            <div class="mb-3">
+                <label for="mobileNo" class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" name="mobileNo" id="mobileNo" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="reset" class="btn btn-danger" id="Cancel">Cancel</button>
+        </form>
+    </div>
+    <script src="update.js"></script>
+</body>
+</html>

@@ -27,6 +27,7 @@ function fetchStudent(){
             <td>${studentData.mobileNo}</td>
             <td>${studentData.email}</td>
             <td class="btn btn-danger" onclick="deleteStudent(${index})">Delete</td>
+            <td class="btn btn-info" onclick="UpdateStudent(${index})">Update</td>
         </tr>
     `;
 
@@ -39,6 +40,10 @@ function fetchStudent(){
         AllStudent.splice(index,1)
         localStorage.setItem('AllStudent',JSON.stringify(AllStudent))
         fetchStudent()
+    }
+
+    function UpdateStudent(index){
+        window.location=`update.html?index=${index}`
     }
 
 fetchStudent()
