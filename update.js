@@ -51,8 +51,8 @@ document.getElementById('StudentForm').addEventListener('submit', function(e){
     let student = new Student(firstName, lastName, roll, StudentClass, mobileNo, email)
     console.log(student);
 
+    // Update the existing student at this index
     if (index !== null && AllStudent[index]) {
-        // Update the existing student at this index
         AllStudent[index] = student.toJSON();
         alert('Student updated successfully!');
     }
@@ -63,8 +63,8 @@ document.getElementById('StudentForm').addEventListener('submit', function(e){
     window.location.href = 'allData.html';
 })
 
+// Use Cancel Button for goto the previous Page without Updating
 document.getElementById('Cancel').addEventListener('click',redirect)
-
 function redirect(){
     window.location = `allData.html`;
 }

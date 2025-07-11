@@ -34,7 +34,7 @@ function fetchStudent(){
     StudentTableBody.innerHTML += row;
     });
 }
-
+    // Delete Student Data
     function deleteStudent(index){
         const AllStudent = JSON.parse(localStorage.getItem('AllStudent'))
         AllStudent.splice(index,1)
@@ -42,6 +42,7 @@ function fetchStudent(){
         fetchStudent()
     }
 
+    // Redirect after Update Student
     function UpdateStudent(index){
         window.location=`update.html?index=${index}`
     }
